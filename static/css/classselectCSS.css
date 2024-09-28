@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+
+@prim: #53e3a6;
+
+*{
+	box-sizing: border-box;
+	font-weight: 300;
+}
+
+#Logo{
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 20%;
+	height: auto;
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: black;
+	font-weight: 300;
+	background: url(https://www.dalycollege.org/images/slider-1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-size: auto;
+}
+
+.container{
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 100px 0;
+	height: 400px;
+	text-align: center;
+}
+
+.class_dropddown{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+}
+.class_dropddown select{
+		color:: white;
+		padding: 10px 15px;
+		border-radius:100px;
+		width: 150px;
+		height: 50px;
+}
+#class_select{
+		appearance: none;
+		outline: 0;
+		background-color: white;
+		border: 0;
+		padding: 10px 15px;
+		color: @prim;
+		border-radius:100px;
+		cursor: pointer;
+		font-size: 18px;
+		width: 150px;
+		height: 50px;
+}

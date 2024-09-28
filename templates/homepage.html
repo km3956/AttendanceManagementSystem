@@ -1,0 +1,16 @@
+{% load static %}
+<head>
+	<title>Teacher Login</title>>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/homepageCSS.css' %}"/>
+</head>
+<div class="wrapper">
+	<img src='https://lh3.googleusercontent.com/QSJdIX5ITy9ruQSq1tEUiuwb1o5EGfoXH7BA-nAJOHVos7wI61vqtwufvhC4UqfimSo' id = "Logo">
+	<div class="container">
+		<form class="form" method="post">
+			{% csrf_token %}
+			<input type="text" name="username" placeholder="Username" id = "input">
+			<input type="password" name="password" placeholder="Password" id = "input">
+			<button formaction="/classselect" type="submit" id="login-button">Login</button>
+		</form>
+	</div>
+</div>
